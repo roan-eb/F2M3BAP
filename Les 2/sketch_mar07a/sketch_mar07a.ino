@@ -32,7 +32,7 @@ void loop() {
       digitalWrite(Led2, LOW);
     }
 
-     if ( lichtHoeveelHeid > 25){
+    if ( lichtHoeveelHeid > 25){
     digitalWrite(Led3, HIGH);
     }
     else{

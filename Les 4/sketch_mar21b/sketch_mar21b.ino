@@ -83,7 +83,7 @@ void handleNotFound(){
 void handleSensor(){
   server.send(200, "text/html", "<h3>Duurzaam Huis: " 
    +  studentName + "</h3>Temperature " + String(Temperature) + 
-   " Celsius<br>Humidity " + String(Humidity) +  " %<br>Heatindex " + String(HeatIndex) + "<br>Lichthoeveelheid " + String(lichtHoeveelheid)); 
+   "  in Celsius in kelvin = " + String(Temperature + 273) + "<br>Humidity " + String(Humidity) +  " %<br>Heatindex " + String(HeatIndex)+ "<br>Lichthoeveelheid " + String(lichtHoeveelheid));
   }
 
 void setup(){
